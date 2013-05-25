@@ -1,0 +1,70 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:h="http://java.sun.com/jsf/html"
+            xmlns:f="http://java.sun.com/jsf/core"
+            xmlns:ui="http://java.sun.com/jsf/facelets"
+            xmlns:p="http://primefaces.prime.com.tr/ui">
+
+	<div class="box-bottom-budget">
+		<div id="box-bottom-col-left">
+			<p class="title-bold">Serviços para Automóveis</p>
+			<ul>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=panelsAndHoodsRestoration" title="Restauração de painéis e capotas">Restauração de painéis e capotas</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=tissueVelvetAndCarpetRestoration" title="Restauração de tecido, veludo e tapetes">Restauração de tecido, veludo e tapetes</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=leatherVinylAndLiningRestoration" title="Restauração de couro, vinil e revestimentos internos">Restauração de couro, vinil e revestimentos internos</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=colorLiningRestoration" title="Restauração de cor em revestimentos internos">Restauração de cor em revestimentos internos</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=windshieldAndHeadlightsRestoration" title="Restauração de pára-brisa e faróis">Restauração de pára-brisa e faróis</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=aluminumAlloyWheelsRestoration" title="Restauração da liga das rodas de alumínio">Restauração da liga das rodas de alumínio</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=spoilersAndBumpersRestoration" title="Restauração de spoilers e pára-choques">Restauração de spoilers e pára-choques</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=upholsteryWoodAndAluminumRestoration" title="Restauração de estofamentos, madeira e alumínio">Restauração de estofamentos, madeira e alumínio</a></li>
+				<li><a href="#{request.contextPath}/vehicleServices.page?serviceName=fairingsAndMotocycleHelmetRestoration" title="Restauração de carenagens e capacetes de motos">Restauração de carenagens e capacetes de motos</a></li>
+			</ul>
+		</div>
+		<div id="box-bottom-col-middle">
+			<p class="title-bold">Serviços Especiais</p>
+			<ul>
+				<li><a href="#{request.contextPath}/specialServices.page?serviceName=furnishingsRestoration" title="Restauração de móveis">Restauração de móveis</a></li>
+				<li><a href="#{request.contextPath}/specialServices.page?serviceName=appliancesRestoration" title="Restauração eletrodomésticos">Restauração eletrodomésticos</a></li>
+				<li><a href="#{request.contextPath}/specialServices.page?serviceName=costumesRestoration" title="Restauração de trajes">Restauração de trajes</a></li>
+				<li><a href="#{request.contextPath}/specialServices.page?serviceName=boatsRestoration" title="Restauração de barcos">Restauração de barcos</a></li>
+				<li><a href="#{request.contextPath}/specialServices.page?serviceName=sportAircraftRestoration" title="Restauração de aeronaves esportivas">Restauração de aeronaves esportivas</a></li>
+				<li><a href="#{request.contextPath}/specialServices.page?serviceName=classicCarRestoration" title="Restauração de carros clássicos">Restauração de carros clássicos</a></li>													
+			</ul>
+		</div>
+		<div id="box-bottom-col-right">
+			<p class="title-bold">Orçamento</p>
+			
+			<p:ajaxStatus style="width:16px;height:16px;">  
+			    <f:facet name="start">  
+			        <h:graphicImage value="/images/ajaxloading.gif" />  
+			    </f:facet>				      
+			    <f:facet name="complete">  
+			        <h:outputText value="" />  
+			    </f:facet>  
+			</p:ajaxStatus>
+			
+			<h:form prependId="false">
+				<p:panel id="panel" columns="1" style="border: none">									
+					<p:messages />					
+					<p>
+						<p:inputText id="name" name="name" value="#{budgetController.budget.name}" maxlength="40" tabindex="1" />																										
+					</p>
+					<p>
+						<p:inputText id="phone" name="phone" value="#{budgetController.budget.phone}" maxlength="40" tabindex="2" />																								
+					</p>
+					<p>
+						<p:inputText id="email" name="email" value="#{budgetController.budget.email}" maxlength="60" tabindex="3" />																											
+					</p>
+					<p>
+						<p:inputText id="service" name="service" value="#{budgetController.budget.service}" maxlength="150" tabindex="4" />																											
+					</p>
+					<p>
+						<p:inputTextarea id="message" name="message" value="#{budgetController.budget.message}" cols="80" rows="40" />																											
+					</p>					
+					<p:commandButton value="Enviar" update="panel" actionListener="#{budgetController.send}" style="background: url(images/bt_bg.gif) repeat-x;margin:0 0 0 106px;color: #ffffff !important;font-weight: normal;padding: 3px;border: none;height:28px;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);" />
+				</p:panel>				
+			</h:form>
+			
+		</div>
+	</div>
+	                
+</ui:composition>

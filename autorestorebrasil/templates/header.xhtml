@@ -1,0 +1,20 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:h="http://java.sun.com/jsf/html"
+            xmlns:f="http://java.sun.com/jsf/core"
+            xmlns:ui="http://java.sun.com/jsf/facelets"
+            xmlns:p="http://primefaces.prime.com.tr/ui">
+            
+	<div id="header">			
+		<h1 id="logo">
+			<a href="#{request.contextPath}/home.page" title="Auto Restore Brasil">
+				<img src="images/logo_autorestorebrasil.gif" alt="Auto Restore Brasil" />
+			</a>
+		</h1>			
+		<div id="contactus">
+			<img class="contactus-icon" src="images/contactus_icon.gif"/><p class="right">Entre em contato conosco (41) 3042-1955</p>
+		</div>			
+		<!-- Menu -->
+		<ui:include src="menu.xhtml" />			
+	</div>
+            
+</ui:composition>

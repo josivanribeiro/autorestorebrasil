@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.prime.com.tr/ui"
+	template="/templates/ui.xhtml">
+	<ui:define name="content">				
+		
+		<div class="navigation-bar"><a href="home.page">Home</a> > Orçamento</div>		
+		<div class="box-middle-internal">
+			<p class="title-with-bottom-line">Orçamento</p>
+			<p>
+				Seu orçamento de forma rápida.
+				Solicite um orçamento conforme a necessidade da sua empresa.
+				Preencha abaixo dados específicos de contato e preencha o serviço que você deseja, 
+				que em breve lhe enviaremos uma proposta comercial com a melhor solução.
+			</p>													
+		</div>
+		
+    	<!-- Budget include -->
+		<ui:include src="/templates/boxBottomBudget.xhtml" />
+	   	
+	</ui:define>
+</ui:composition>

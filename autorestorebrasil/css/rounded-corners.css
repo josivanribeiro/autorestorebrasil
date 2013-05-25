@@ -1,0 +1,163 @@
+/**
+ * This file enables CSS3-based rounded corners for capable browsers.
+ *
+ * Author: Sayontan Sinha
+ */
+
+/* All corners same */
+#language-selector ul ul li,
+#language-selector ul ul li a,
+#language-selector ul ul li a:visited {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+}
+
+#wrapper {
+	-moz-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#menu {
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.button input[type="submit"], input[type="button"] {
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.searchform .searchfield {
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+    -khtml-border-top-left-radius: 5px;
+    -khtml-border-bottom-left-radius: 5px;
+}
+
+.searchform .searchsubmit {
+	border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+    -khtml-border-top-right-radius: 5px;
+    -khtml-border-bottom-right-radius: 5px;
+}
+
+fieldset, legend, textarea, .box input[type="text"], .box input[type="password"],
+.box select, .button, .submit, .generic-button, #language-selector ul li a, 
+#language-selector ul li a:visited, .announcement, .warning, .standard-form,
+#main-col .box, #main-col .box .content, .post, div.page, .language-switcher {
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#menu.continuous ul li,
+#menu.continuous ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+/* Same top-left and top-right */
+#menu ul ul li,
+#menu ul ul li a,
+#menu ul ul li a:visited {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+    -khtml-border-top-left-radius: 5px;
+    -khtml-border-top-right-radius: 5px;
+}
+
+#commentform label.textarea,
+h2.suf-mag-category-title,
+#language-selector ul ul li:first-child,
+#language-selector ul ul li:first-child a,
+#language-selector ul ul li:first-child a:visited,
+ul.sidebar-tabs li a,
+#menu ul li, #menu ul li a, #menu ul ul ul li:first-child, #menu ul ul ul li:first-child > a, #menu ul ul ul ul li:first-child > a:hover,
+#menu-top ul ul ul li:first-child, #menu-top ul ul ul li:first-child > a, #menu-top ul ul ul li:first-child > a:hover,
+#item-nav div.item-list-tabs ul li {
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+/* Same top-left and bottom-left */
+#commentform label {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-khtml-border-top-left-radius: 5px;
+	-khtml-border-bottom-left-radius: 5px;
+}
+
+/* Same top-right and bottom-right */
+#commentform input[type="text"] {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-khtml-border-top-right-radius: 5px;
+	-khtml-border-bottom-right-radius: 5px;
+}
+
+/* Same bottom-left and bottom-right */
+#language-selector ul ul li:last-child,
+#language-selector ul ul li:last-child a,
+#language-selector ul ul li:last-child a:visited,
+div.sidebar-tab-content,
+#menu ul ul li:last-child, #menu ul ul li:last-child > a, #menu ul ul li:last-child > a:hover,
+#menu-top, #menu-top ul ul li:last-child, #menu-top ul ul li:last-child > a, #menu-top ul ul li:last-child > a:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -khtml-border-bottom-left-radius: 5px;
+    -khtml-border-bottom-right-radius: 5px;
+}
+
+/* Solo corners */
+#commentform input[type="text"],
+#commentform label.textarea {
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -khtml-border-bottom-left-radius: 0;
+}
+
+#commentform input[type="text"],
+#commentform textarea {
+	border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	-khtml-border-top-left-radius: 0;
+}

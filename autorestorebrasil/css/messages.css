@@ -1,0 +1,89 @@
+.ui-messages-info, .ui-messages-warn, .ui-messages-error, .ui-messages-fatal {
+    margin-top: -8px;
+    border: 1px solid;
+    margin: 10px 0;
+    padding: 10px;
+}
+.ui-messages-info, .ui-message-info {
+    margin-top: -8px;
+    background-color: #BDE5F8;
+    color: #00529B;
+}
+.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon, .ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
+    background: url("/autorestorebrasil/javax.faces.resource/messages/messages.png.page?ln=primefaces&amp;v=2.2.1") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon {
+    height: 24px;
+    margin-top: -4px;
+    width: 24px;
+}
+.ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
+    height: 16px;
+    width: 16px;
+}
+.ui-messages-info-summary, .ui-messages-warn-summary, .ui-messages-error-summary, .ui-messages-fatal-summary, .ui-message-info-summary, .ui-message-warn-summary, .ui-message-error-summary, .ui-message-fatal-summary {
+    /*font-weight: bold;
+    margin-left: 10px;*/
+}
+.ui-messages-info-detail, .ui-messages-warn-detail, .ui-messages-error-detail, .ui-messages-fatal-detail, .ui-message-info-detail, .ui-message-warn-detail, .ui-message-error-detail, .ui-message-fatal-detail {
+    margin-top: -8px;
+    margin-left: 5px;
+}
+.ui-messages-warn, .ui-message-warn {
+    margin-top: -8px;
+    background-color: #FEEFB3;
+    color: #9F6000;
+}
+.ui-messages-error, .ui-message-error {
+    margin-top: -8px;
+    background-color: #FFBABA;
+    color: #D8000C;
+}
+.ui-messages-fatal, .ui-message-fatal {
+    margin-top: -8px;
+    background-color: #CC0000;
+    color: #000000;
+}
+.ui-messages ul {
+    list-style-type: none;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+.ui-message-info, .ui-message-error, .ui-message-warn, .ui-message-fatal {
+    border: 1px solid;
+    margin: 0 5px;
+    padding: 2px 5px;
+}
+.ui-messages-info-icon {
+    background-position: 0 -68px;
+}
+.ui-messages-warn-icon {
+    background-position: 0 -102px;
+}
+.ui-messages-error-icon {
+    background-position: 0 0;
+}
+.ui-messages-fatal-icon {
+    background-position: 0 -34px;
+}
+.ui-message-info-icon {
+    background-position: 0 -188px;
+}
+.ui-message-warn-icon {
+    background-position: 0 -214px;
+}
+.ui-message-error-icon {
+    background-position: 0 -136px;
+}
+.ui-message-fatal-icon {
+    background-position: 0 -162px;
+}
+.ui-message-icon-only {
+    height: 16px;
+    width: 16px;
+}

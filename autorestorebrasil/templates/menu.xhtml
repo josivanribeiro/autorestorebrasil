@@ -1,0 +1,39 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:h="http://java.sun.com/jsf/html"
+            xmlns:f="http://java.sun.com/jsf/core"
+            xmlns:ui="http://java.sun.com/jsf/facelets"
+            xmlns:p="http://primefaces.prime.com.tr/ui">
+            
+	<div id="menu">			
+		<ul class="dropdown">
+	       	<li><a href="#{request.contextPath}/home.page" title="Home"><img class="home-icon" src="images/home_icon.gif"/></a></li>
+	       	<li><a href="#{request.contextPath}/company.page" title="A Empresa">A Empresa</a></li>
+	       	<li><a href="#" title="Serviços para Automóvel">Serviços para Automóvel <img class="arrow-bottom-icon" src="images/arrow_bottom.gif"/></a>
+	       		<ul class="width-315px">
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=panelsAndHoodsRestoration" title="Restauração de painéis e capotas">Restauração de painéis e capotas</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=tissueVelvetAndCarpetRestoration" title="Restauração de tecido, veludo e tapetes">Restauração de tecido, veludo e tapetes</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=leatherVinylAndLiningRestoration" title="Restauração de couro, vinil e revestimentos internos">Restauração de couro, vinil e revestimentos internos</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=colorLiningRestoration" title="Restauração de cor em revestimentos internos">Restauração de cor em revestimentos internos</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=windshieldAndHeadlightsRestoration" title="Restauração de pára-brisa e faróis">Restauração de pára-brisa e faróis</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=aluminumAlloyWheelsRestoration" title="Restauração da liga das rodas de alumínio">Restauração da liga das rodas de alumínio</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=spoilersAndBumpersRestoration" title="Restauração de spoilers e pára-choques">Restauração de spoilers e pára-choques</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=upholsteryWoodAndAluminumRestoration" title="Restauração de estofamentos, madeira e alumínio">Restauração de estofamentos, madeira e alumínio</a></li>
+	       			 <li><a href="#{request.contextPath}/vehicleServices.page?serviceName=fairingsAndMotocycleHelmetRestoration" title="Restauração de carenagens e capacetes de motos">Restauração de carenagens e capacetes de motos</a></li>		
+	       		</ul>
+	       	</li>
+	       	<li><a href="#" title="Serviços Especiais">Serviços Especiais <img class="arrow-bottom-icon" src="images/arrow_bottom.gif"/></a>
+	       		<ul class="width-215px">
+	       			 <li><a href="#{request.contextPath}/specialServices.page?serviceName=furnishingsRestoration" title="Restauração de móveis">Restauração de móveis</a></li>
+	       			 <li><a href="#{request.contextPath}/specialServices.page?serviceName=appliancesRestoration" title="Restauração eletrodomésticos">Restauração eletrodomésticos</a></li>
+	       			 <li><a href="#{request.contextPath}/specialServices.page?serviceName=costumesRestoration" title="Restauração de trajes">Restauração de trajes</a></li>
+	       			 <li><a href="#{request.contextPath}/specialServices.page?serviceName=boatsRestoration" title="Restauração de barcos">Restauração de barcos</a></li>
+	       			 <li><a href="#{request.contextPath}/specialServices.page?serviceName=sportAircraftRestoration" title="Restauração de aeronaves esportivas">Restauração de aeronaves esportivas</a></li>
+	       			 <li><a href="#{request.contextPath}/specialServices.page?serviceName=classicCarRestoration" title="Restauração de carros clássicos">Restauração de carros clássicos</a></li>
+	       		</ul>
+	       	</li>
+	       	<li><a href="#{request.contextPath}/franchise.page" title="Franquia">Franquia</a></li>
+	       	<li><a href="#{request.contextPath}/budget.page" title="Orçamento">Orçamento</a></li>		        	        	
+		</ul>
+	</div>
+			
+</ui:composition>

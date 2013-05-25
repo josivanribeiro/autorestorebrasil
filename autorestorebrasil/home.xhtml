@@ -1,0 +1,66 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.prime.com.tr/ui"
+	template="/templates/ui.xhtml">
+
+	<ui:define name="content">				
+		<div id="navigation-bar"></div>				
+		<div class="box-top">							
+			<p:imageSwitch effect="fade" speed="10000" widgetVar="imagesSwitch">
+	        	<p:graphicImage styleClass="img-banner-home" value="/images/img_banner_home_1.jpg" />
+	            <p:graphicImage styleClass="img-banner-home" value="/images/img_banner_home_2.jpg" />
+	            <p:graphicImage styleClass="img-banner-home" value="/images/img_banner_home_3.jpg" />
+			</p:imageSwitch>														
+	    </div>
+	    <div class="box-middle">
+			<div id="box-middle-col-left">
+				<p>
+					Se você está buscando uma solução 
+					profissional, rápida e econômica para 
+					algum dano na parte interior ou exterior 
+					de seu veículo, as alternativas que 
+					possui não correspondem às suas 
+					expectativas ou são incompatíveis com
+					seu orçamento ou prazo, ou 
+					desproporcionais ao dano que você quer
+					corrigir.
+				</p>
+				<p>
+					A Auto Restore Brasil Color 
+					Systems pode fornecer a solução 
+					adequada para suas necessidades. 
+					Além disso, se você possui um veículo que
+					necessita de manutenção ou restauração
+					de cores, nós fornecemos uma opção 
+					que permite recuperar e preservar a
+					cor original de seu veículo.
+				</p>
+			</div>
+			<div id="box-middle-col-right">
+				<p class="title-with-bottom-line">A Auto Restore Brasil Color Systems irá fornecer ao veículo danificado várias opções</p>
+				<ul>
+					<li>Restauração de estofamentos (couro, vinil ou tecido)</li>
+					<li>Painéis, tapetes e revestimentos internos</li>
+					<li>Consoles e volantes</li>
+					<li>Acabamentos de madeira e alumínio</li>
+					<li>Plásticos, pára-choques, molduras interiores e exteriores</li>
+					<li>Rodas de liga-leve</li>
+					<li>Tratamentos de danos e anti-envelhecimento da pintura</li>
+					<li>Pára-brisa e vidro</li>
+					<li>Faróis, etc.</li>					
+				</ul>
+				<p>
+					Além disso, nosso sistema de restauração permite recuperar peças danificadas, 
+					sem prazos demorados, com um orçamento acessível, retornando-as à sua aparência 
+					e forma original.
+				</p>									
+			</div>
+	    </div>
+	    
+	    <!-- Contact Us include -->
+		<ui:include src="/templates/boxBottomContactus.xhtml" />
+		
+	</ui:define>
+</ui:composition>
